@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Source+Sans+Pro&display=swap');
+header {
+    position: relative;
+    background: url('../img/header_bg.jpg') center/cover;
+    height: 100vh;
+    padding-top: 40px;
+    text-align: center;
+}
+nav { text-align: center }
+#menu li a {
+    font: .8em Poppins, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6, .footer p{
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h1 { font-size: 2em }
+h2 { font-size: 1.5em; text-transform: capitalize; margin-bottom: 30px; }
+h3 { font-size: 1.8em; color: #a2ca28; margin-bottom: 20px;}
+h4 { font-size: 1.8em; color: #fff; margin-bottom: 20px;}
+h5 { font-size: 1em; letter-spacing: 3px }
+h6 { font: .9em 'Montserrat', sans-serif; color: #fd634e; }
+h1 span { color: #a2ca28 }
+h5 span { color: #f0604c }
+
+#strip {
+    position: absolute;
+    height: 50px;
+    background: #fd634d4d;
+    width: 100%;
+    bottom: 0;
+}
+.title {
+    position: absolute;
+    width: 100%;
+    bottom: 15vh;
+}
+.row_one { padding: 60px 0 }
+.row_one article {
+    display: flex; 
+    flex-direction: column;
+    padding: 30px 20px;
+}
+.row_one article p {
+    font: .9em/24px 'Open Sans', sans-serif;
+    color: #fff;
+    margin-bottom: 25px;
+    flex: 1;
+}
+.row_one article a { font: .9em/24px 'Open Sans', sans-serif; color: #fff; }
+.row_one article i {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.fitness_first, .your_body { display: flex;flex-direction: column-reverse; }
+.col33, .lifestyle_text, .grapes_text {
+    padding: 40px 0;
+    background: #fff;
+    text-align: center;
+    min-height: 50vh;
+}
+.col33 i { color: #e3e9e9; padding-bottom: 20px; }
+.col33 p, .lifestyle_text p, .grapes_text { color: #8b9196; padding: 0  15px 20px  15px;}
+.col33 a { color: #a2ca28; text-decoration: underline;}
+
+.lifestyle, .grapes { background: #fff }
+.summer, .avocado_text { background: #a1c927; color: #fff; }
+ .grapes_text, .avocado_text, .summer_text { padding: 20px; min-height: 50vh; }
+.lifestyle_text, .grapes_text ,.avocado_text{ min-height: 50vh; }
+
+.footer { text-align: center;padding-top: 50px;}
+.item { padding: 20px; }
+.item p{ color: #fff; margin-top: 20px; }
+
+.row_icons { display: flex; justify-content: space-between; }
+.row_icons i { 
+    font-size: 2em;
+    margin: 15px 15px 0 0; 
+    color: #fff;
+}
+#btn_newsletter {
+    background-color: #a1c927;
+    color: #fff;
+    max-width: 180px;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+#btn_newsletter:hover { background-color: #fff; color: #a1c927; }
+.input_div { 
+    padding: 50px 0; 
+    display: flex;
+    flex-direction: column;
+}
+input { 
+    max-width: 180px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.fa-linkedin-in:hover { color: #00fcfc }
+.fa-instagram:hover { color: #ff0404 }
+.fa-behance:hover { color: blue}
+.fa-dribbble:hover { color: pink }
+
+.bgred { background: #fd634d;}
+.bggreen { background: #a1c927 }
+#bg_girl { background: url('../img/bg_girl.jpg') center/cover;height: 50vh; }
+#bg_clock { background: url('../img/bg_clock.jpg') center/cover; height: 50vh;}
+#bg_run { background: url('../img/bgrun.jpg') right top/cover; height: 50vh;}
+#bg_swimmer { background: url('../img/bgswimmer.jpg') center/cover; height: 50vh;}
+#bg_grapes { background: url('../img/bggrapes.jpg') center/cover; height: 50vh;}
+#bg_avocado { background: url('../img/bgavacodo.jpg') center/cover; height: 50vh;}
+.footer { background: url('../img/bgfooter.jpg') center/cover; height: 100vh;}
+.bgblack { background:#0d1119; padding-bottom: 100px;}
+
+@media only screen and (min-width: 768px) {
+    .container { max-width: 1180px; margin: auto; }
+    header, nav { text-align: inherit }
+    nav {padding: 0 60px;}
+    #menu { float: right }
+    #menu li { display: inline-block }
+    #menu li:not(:last-child) { margin-right: 2.5vw;}
+    .title { width: inherit; left: 100px ; }
+    .fitness_first { flex-direction: inherit;}
+    .col33, .lifestyle, .avocado, .item { width: 33% }
+    #bg_girl, #bg_clock {flex: 1; height: inherit;}
+    .summer, .grapes, #bg_girl, #bg_clock  { width: 67% }
+    .row_one, .row_three, .row_four, .row_five { display: flex }
+    .row_one { justify-content: space-between }
+    .row_four, .your_body { flex-direction: row-reverse }
+    .row article {   width: 25%; margin: inherit;}
+    .input_div { 
+        max-width: 700px;
+        margin: auto;
+        flex-direction: inherit;
+     }
+    .bgblack .container {
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
